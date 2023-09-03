@@ -238,6 +238,6 @@ def get_jobs(num_jobs, verbose):
             break
     return pd.DataFrame(jobs)
 
-dataset = get_jobs(1000, False)
+dataset = get_jobs(1500, False)
 dataset.to_csv('glassdoor_ds_jobs.csv', index=False)
 # return pd.DataFrame(jobs)  #This line converts the dictionary object into a pandas DataFrame.
